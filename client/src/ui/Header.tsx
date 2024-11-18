@@ -105,7 +105,7 @@ const Header = () => {
         {/*Search results will go here*/}
         {searchText && (
           <div className="absolute left-0 top-20 w-full mx-auto max-h-[500px] px-10 py-5 bg-white z-20 overflow-y-scroll text-black shadow-lg shadow-skyText scrollbar-hide">
-            {filteredProducts.length > 0 ? <div> produucts </div> : <div>
+            {filteredProducts.length > 0 ? <div> produucts are available</div> : <div>
               <p className="text-xl font-normal">Nothing matches with your search keywords
                 <span className="underline underline-offset-2 decoration-[1px] text-red-500 font-semibold">{`(${searchText})`} </span>
                 PLease try again</p>
