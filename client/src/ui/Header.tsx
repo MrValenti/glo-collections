@@ -23,12 +23,18 @@ import { CategoryProps, ProductProps } from "../../type";
 
 const bottomNavigation = [
   { title: "Home", link: "/" },
-  { title: "Shop", link: "/product" },
-  { title: "Cart", link: "/cart" },
-  { title: "Favorite", link: "/favorite" },
-  { title: "Orders", link: "/orders" },
-  { title: "My Account", link: "/profile" },
-  { title: "Blog", link: "/blog" },
+  { title: "BEVERAGES", link: "/product" },
+  { title: "FRAGRANCES", link: "/cart" },
+  { title: "AFRICAN GARMETS", link: "/favorite" },
+  { title: "FOOTWARE", link: "/orders" },
+  { title: "HOMEWARE", link: "/profile" },
+  { title: "ACCESSORIES", link: "/blog" },
+  { title: "APPAREL", link: "/blog" },
+  { title: "AFRICAN CRAFTS", link: "/blog" },
+  { title: "CONFECTIONERY", link: "/blog" },
+  // { title: "HEALTH & BEAUTY", link: "/blog" },
+  // { title: "ELECTRONICS", link: "/blog" },
+  // { title: "OFFICE & STATIONERY", link: "/blog" },
 ];
 
 const Header = () => {
@@ -105,7 +111,7 @@ const Header = () => {
         {/*Search results will go here*/}
         {searchText && (
           <div className="absolute left-0 top-20 w-full mx-auto max-h-[500px] px-10 py-5 bg-white z-20 overflow-y-scroll text-black shadow-lg shadow-skyText scrollbar-hide">
-            {filteredProducts.length > 0 ? <div> produucts are available</div> : <div>
+            {filteredProducts.length > 0 ? <div> produucts </div> : <div>
               <p className="text-xl font-normal">Nothing matches with your search keywords
                 <span className="underline underline-offset-2 decoration-[1px] text-red-500 font-semibold">{`(${searchText})`} </span>
                 PLease try again</p>
@@ -135,7 +141,7 @@ const Header = () => {
         {/**Menubar */}
       </div>
       <div className="w-full bg-darkText text-whiteText">
-        <Container className="py-2 max-w-4xl flex items-center gap-5 justify-between">
+        <Container className="py-2 flex items-center gap-5 justify-between">
 
           <Menu>
             <MenuButton className="inline-flex items-center gap-2 rounded-md border border-gray-400 hover:border-white py-1.5 px-3 font-semibold text-gray-300 hover:text-whiteText">

@@ -4,13 +4,13 @@ import LinkButton from './LinkButton'
 
 
 const HomeBanner = () => {
-    return (
-        <Container className="relative py-5 overflow-hidden">
-            <div className="relative">
-                <img src={homeBanner} alt='Home Banner' className="w-full h-full object-cover rounded-md" />
-                <div className="w-full h-full absolute top-0 left-0 bg-black/10" />
-            </div>
-            <div className="absolute inset-0 flex flex-col justify-center px-10">
+  return (
+    <Container className="relative py-0 overflow-hidden">
+      <div className="relative">
+        <img src={homeBanner} alt='Home Banner' className="w-full h-full object-cover" />
+        <div className="w-full h-full absolute top-0 left-0 bg-black/10" />
+      </div>
+      <div className="absolute inset-0 flex flex-col justify-center px-10">
         <h2 className="text-xl md:text-4xl lg:text-6xl text-whiteText font-bold">
           Mi Air Purifier
         </h2>
@@ -19,8 +19,8 @@ const HomeBanner = () => {
         </p>
         <LinkButton className="w-44 flex items-center justify-center bg-whiteText text-darkText hover:bg-darkText hover:text-whiteText duration-200 mt-4" />
       </div>
-        </Container>
-    )
+    </Container>
+  )
 }
 
 export default HomeBanner
