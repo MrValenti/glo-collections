@@ -6,29 +6,29 @@ const products = [
   {
     id: 1,
     image: "https://via.placeholder.com/150",
-    title: "Mobile Cold Room",
-    description: "Jax Wax - Gilders Paste - 1kg Tins - Black.",
+    title: "Ladies",
+    description: "La DoubleJ - La Scala Herald jacquard top",
     price: "2500.00",
   },
   {
     id: 2,
     image: "https://via.placeholder.com/150",
-    title: "Portable Kitchen",
-    description: "Jax Wax - Gilders Paste - 1kg Tins - Black.",
+    title: "Platters & Sweets",
+    description: "Sweet Platter.",
     price: "1800.00",
   },
   {
     id: 3,
     image: "https://via.placeholder.com/150",
-    title: "Portable Kitchen",
-    description: "Jax Wax - Gilders Paste - 1kg Tins - Black.",
+    title: "Cakes",
+    description: "Lux Chocolate lovers Ganache Cake.",
     price: "900.00",
   },
   {
     id: 4,
     image: "https://via.placeholder.com/150",
-    title: "Portable Kitchen",
-    description: "Jax Wax - Gilders Paste - 1kg Tins - Black.",
+    title: "Stationery",
+    description: "Grade 4 - 2025 Stationery Hamper",
     price: "2300.00",
   },
   // Add more products here
@@ -40,7 +40,6 @@ const ProductListHome = () => {
       <div className="mb-10">
         <div className="flex justify-between">
           <div className="text-center w-full">
-          
             <Title text="Featured Categories" />
           </div>
         </div>

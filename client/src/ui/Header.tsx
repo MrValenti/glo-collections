@@ -4,18 +4,18 @@ import { Link } from "react-router-dom";
 import { IoClose, IoSearchOutline } from 'react-icons/io5'
 import { FiShoppingCart, FiStar, FiUser } from "react-icons/fi";
 import Container from "./Container";
-import { FaChevronDown } from "react-icons/fa6";
+// import { FaChevronDown } from "react-icons/fa6";
 import { config } from '../../config';
 import { getData } from "../lib";
 
-import {
-  Menu,
-  MenuButton,
-  MenuItem,
-  MenuItems,
-  Transition,
-} from "@headlessui/react";
-import { CategoryProps, ProductProps } from "../../type";
+// import {
+//   Menu,
+//   MenuButton,
+//   MenuItem,
+//   MenuItems,
+//   Transition,
+// } from "@headlessui/react";
+import { ProductProps } from "../../type";
 // import { CategoryProps, ProductProps } from "../../type";
 
 
@@ -23,15 +23,15 @@ import { CategoryProps, ProductProps } from "../../type";
 
 const bottomNavigation = [
   { title: "Home", link: "/" },
-  { title: "BEVERAGES", link: "/product" },
-  { title: "FRAGRANCES", link: "/cart" },
-  { title: "AFRICAN GARMETS", link: "/favorite" },
-  { title: "FOOTWARE", link: "/orders" },
-  { title: "HOMEWARE", link: "/profile" },
-  { title: "ACCESSORIES", link: "/blog" },
-  { title: "APPAREL", link: "/blog" },
-  { title: "AFRICAN CRAFTS", link: "/blog" },
-  { title: "CONFECTIONERY", link: "/blog" },
+  { title: "BEVERAGES", link: "/category" },
+  { title: "FRAGRANCES", link: "/category" },
+  { title: "AFRICAN GARMETS", link: "/category" },
+  { title: "FOOTWARE", link: "/footware" },
+  { title: "HOMEWARE", link: "/homeware" },
+  { title: "ACCESSORIES", link: "/accessories" },
+  { title: "APPAREL", link: "/apparel" },
+  { title: "AFRICAN CRAFTS", link: "/african-crafts" },
+  { title: "CONFECTIONERY", link: "/confectionary" },
   // { title: "HEALTH & BEAUTY", link: "/blog" },
   // { title: "ELECTRONICS", link: "/blog" },
   // { title: "OFFICE & STATIONERY", link: "/blog" },
@@ -39,7 +39,7 @@ const bottomNavigation = [
 
 const Header = () => {
   const [searchText, setSearchText] = useState("");
-  const [categories, setCategories] = useState([]);
+  // const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
 
@@ -58,19 +58,19 @@ const Header = () => {
   // console.log('product', products);
 
 
-  useEffect(() => {
-    const fetchData = async () => {
-      const endpoint = `${config?.baseUrl}/categories`;
-      try {
-        const data = await getData(endpoint);
-        setCategories(data);
+  // useEffect(() => {
+  //   const fetchData = async () => {
+  //     const endpoint = `${config?.baseUrl}/categories`;
+  //     try {
+  //       const data = await getData(endpoint);
+  //       setCategories(data);
 
-      } catch (error) {
-        console.error("Error fetching data", error);
-      }
-    };
-    fetchData();
-  }, []);
+  //     } catch (error) {
+  //       console.error("Error fetching data", error);
+  //     }
+  //   };
+  //   fetchData();
+  // }, []);
   // console.log('from search:', searchText);
 
   useEffect(() => {
@@ -103,7 +103,7 @@ const Header = () => {
               className='absolute top-2.5 right-4 text-xl hover:text-red-500 cursor-pointer duration-200'
             />
           ) : (
-            <IoSearchOutline className='absolute top-2.5 right-4 text-xl' />
+            <IoSearchOutline className='absolute top-2.5 right-4 text-xxl cursor-pointer ' />
 
           )}
 
@@ -143,7 +143,7 @@ const Header = () => {
       <div className="w-full bg-darkText text-whiteText">
         <Container className="py-2 flex items-center gap-5 justify-between">
 
-          <Menu>
+          {/* <Menu>
             <MenuButton className="inline-flex items-center gap-2 rounded-md border border-gray-400 hover:border-white py-1.5 px-3 font-semibold text-gray-300 hover:text-whiteText">
               New Arrivals <FaChevronDown className="text-base mt-1" />
             </MenuButton>
@@ -176,7 +176,7 @@ const Header = () => {
                 ))}
               </MenuItems>
             </Transition>
-          </Menu>
+          </Menu> */}
 
           {
             bottomNavigation.map(({ title, link }) => (

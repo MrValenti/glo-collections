@@ -1,11 +1,12 @@
-import Container from './Container'
+//import Container from './Container'
 import { homeBanner } from '../assets'
 import LinkButton from './LinkButton'
+import ContainerBanner from './ContainerBanner'
 
 
 const HomeBanner = () => {
   return (
-    <Container className="relative py-0 overflow-hidden">
+    <ContainerBanner className="relative py-0 overflow-hidden">
       <div className="relative">
         <img src={homeBanner} alt='Home Banner' className="w-full h-full object-cover" />
         <div className="w-full h-full absolute top-0 left-0 bg-black/10" />
@@ -19,7 +20,7 @@ const HomeBanner = () => {
         </p>
         <LinkButton className="w-44 flex items-center justify-center bg-whiteText text-darkText hover:bg-darkText hover:text-whiteText duration-200 mt-4" />
       </div>
-    </Container>
+    </ContainerBanner>
   )
 }
 
