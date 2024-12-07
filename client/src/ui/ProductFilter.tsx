@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 
 const ProductFilter = () => {
   // State for filters
@@ -10,7 +10,7 @@ const ProductFilter = () => {
     pattern: "",
   });
 
-  const handleChange = (e) => {
+  const handleChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setFilters({
       ...filters,
       [e.target.name]: e.target.value,
