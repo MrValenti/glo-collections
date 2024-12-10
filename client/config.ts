@@ -6,7 +6,7 @@ interface Config {
     switch (server) {
       case "production":
         config = {
-          baseUrl: "https://glo-collections.vercel.app/",
+          baseUrl: "https://glo-collections.vercel.app",
         };
         break;
       case "local":
