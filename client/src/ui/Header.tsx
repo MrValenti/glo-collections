@@ -5,18 +5,19 @@ import { IoClose, IoSearchOutline } from 'react-icons/io5'
 import { FiShoppingCart, FiStar, FiUser } from "react-icons/fi";
 import Container from "./Container";
 // import { FaChevronDown } from "react-icons/fa6";
+import { FiAlignLeft } from "react-icons/fi";
 import { config } from '../../config';
 import { getData } from "../lib";
 
-// import {
-//   Menu,
-//   MenuButton,
-//   MenuItem,
-//   MenuItems,
-//   Transition,
-// } from "@headlessui/react";
-import { ProductProps } from "../../type";
-// import { CategoryProps, ProductProps } from "../../type";
+import {
+  Menu,
+  MenuButton,
+  MenuItem,
+  MenuItems,
+  Transition,
+} from "@headlessui/react";
+// import { ProductProps } from "../../type";
+import { CategoryProps, ProductProps } from "../../type";
 
 
 
@@ -39,7 +40,7 @@ const bottomNavigation = [
 
 const Header = () => {
   const [searchText, setSearchText] = useState("");
-  // const [categories, setCategories] = useState([]);
+  const [categories, setCategories] = useState([]);
   const [products, setProducts] = useState([]);
   const [filteredProducts, setFilteredProducts] = useState([]);
 
@@ -55,23 +56,23 @@ const Header = () => {
     };
     fetchData();
   }, []);
-  // console.log('product', products);
+  //console.log('product', products);
 
 
-  // useEffect(() => {
-  //   const fetchData = async () => {
-  //     const endpoint = `${config?.baseUrl}/categories`;
-  //     try {
-  //       const data = await getData(endpoint);
-  //       setCategories(data);
+  useEffect(() => {
+    const fetchData = async () => {
+      const endpoint = `${config?.baseUrl}/categories`;
+      try {
+        const data = await getData(endpoint);
+        setCategories(data);
 
-  //     } catch (error) {
-  //       console.error("Error fetching data", error);
-  //     }
-  //   };
-  //   fetchData();
-  // }, []);
-  // console.log('from search:', searchText);
+      } catch (error) {
+        console.error("Error fetching data", error);
+      }
+    };
+    fetchData();
+  }, []);
+  console.log('from search:', searchText);
 
   useEffect(() => {
     const filtered = products.filter((item: ProductProps) =>
@@ -88,6 +89,41 @@ const Header = () => {
         <Link to={'/'}>
           <img src={logo} alt="Logo" className='22' />
         </Link>
+        <Menu>
+        <MenuButton className="inline-flex items-center gap-2 rounded-md border border-white hover:border-white py-1.5 px-3 font-semibold text-black hover:bg-gray-900 hover:text-white">
+          <FiAlignLeft className="text-base mt-1" />Categories
+        </MenuButton>
+
+            <Transition
+              enter="transition ease-out duration-75"
+              enterFrom="opacity-0 scale-95"
+              enterTo="opacity-100 scale-100"
+              leave="transition ease-in duration-100"
+              leaveFrom="opacity-100 scale-100"
+              leaveTo="opacity-0 scale-95"
+            >
+              <MenuItems
+                anchor="bottom end"
+                className="w-52 origin-top-right rounded-xl border border-white/5 bg-black p-1 text-sm/6 text-gray-300 [--anchor-gap:var(--spacing-1)] focus:outline-none hover:text-white z-50"
+              >
+                {categories.map((item: CategoryProps) => (
+                  <MenuItem key={item?._id}>
+                    <Link
+                      to={`/category/${item?._base}`}
+                      className="flex w-full items-center gap-2 rounded-lg py-2 px-3 data-[focus]:bg-white/20 tracking-wide"
+                    >
+                      <img
+                        src={item?.image}
+                        alt="categoryImage"
+                        className="w-6 h-6 rounded-md"
+                      />
+                      {item?.name}
+                    </Link>
+                  </MenuItem>
+                ))}
+              </MenuItems>
+            </Transition>
+          </Menu>
         {/**Search Bar */}
         <div className="hidden md:inline-flex max-w-3xl w-full relative">
           <input
@@ -143,40 +179,7 @@ const Header = () => {
       <div className="w-full bg-darkText text-whiteText">
         <Container className="py-2 flex items-center gap-5 justify-between">
 
-          {/* <Menu>
-            <MenuButton className="inline-flex items-center gap-2 rounded-md border border-gray-400 hover:border-white py-1.5 px-3 font-semibold text-gray-300 hover:text-whiteText">
-              New Arrivals <FaChevronDown className="text-base mt-1" />
-            </MenuButton>
-            <Transition
-              enter="transition ease-out duration-75"
-              enterFrom="opacity-0 scale-95"
-              enterTo="opacity-100 scale-100"
-              leave="transition ease-in duration-100"
-              leaveFrom="opacity-100 scale-100"
-              leaveTo="opacity-0 scale-95"
-            >
-              <MenuItems
-                anchor="bottom end"
-                className="w-52 origin-top-right rounded-xl border border-white/5 bg-black p-1 text-sm/6 text-gray-300 [--anchor-gap:var(--spacing-1)] focus:outline-none hover:text-white z-50"
-              >
-                {categories.map((item: CategoryProps) => (
-                  <MenuItem key={item?._id}>
-                    <Link
-                      to={`/category/${item?._base}`}
-                      className="flex w-full items-center gap-2 rounded-lg py-2 px-3 data-[focus]:bg-white/20 tracking-wide"
-                    >
-                      <img
-                        src={item?.image}
-                        alt="categoryImage"
-                        className="w-6 h-6 rounded-md"
-                      />
-                      {item?.name}
-                    </Link>
-                  </MenuItem>
-                ))}
-              </MenuItems>
-            </Transition>
-          </Menu> */}
+          
 
           {
             bottomNavigation.map(({ title, link }) => (
