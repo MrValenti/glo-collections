@@ -8,6 +8,8 @@ import Highlights from "./ui/Highlights";
 import Categories from "./ui/Categories";
 import ProductListHome from './ui/ProductListHome';
 import HeaderSlider from "./ui/HeaderSlider";
+import ProductCardTwo from "./ui/ProductCardTwo";
+import NewArrivals from "./ui/NewArrivals";
 
 function App() {
 
@@ -16,6 +18,8 @@ function App() {
       <HeaderSlider />
       {/* <HomeBanner /> */}
       <ProductListHome />
+      <NewArrivals />
+      <ProductCardTwo />
       <Highlights />
       <Categories />
       <BannerCategories />

@@ -37,6 +37,40 @@ const HeaderSlider = () => {
             caption: "Slide 3 Caption",
             description: "The new tech gift you are wishing for right here.",
         },
+        {
+            id: 4,
+            image: img01,
+            //   image: "https://via.placeholder.com/1600x600?text=Slide+3",
+            caption: "Slide 4 Caption",
+            description: "The new tech gift you are wishing for right here.",
+        },
+        {
+            id: 5,
+            image: img01,
+            //   image: "https://via.placeholder.com/1600x600?text=Slide+3",
+            caption: "Slide 5 Caption",
+            description: "The new tech gift you are wishing for right here.",
+        },
+        {
+            id: 6,
+            image: img01,
+            //   image: "https://via.placeholder.com/1600x600?text=Slide+3",
+            caption: "Slide 6 Caption",
+            description: "The new tech gift you are wishing for right here.",
+        },{
+            id: 7,
+            image: img01,
+            //   image: "https://via.placeholder.com/1600x600?text=Slide+3",
+            caption: "Slide 7 Caption",
+            description: "The new tech gift you are wishing for right here.",
+        },{
+            id: 8,
+            image: img01,
+            //   image: "https://via.placeholder.com/1600x600?text=Slide+3",
+            caption: "Slide 8 Caption",
+            description: "The new tech gift you are wishing for right here.",
+        },
+
     ];
 
     return (

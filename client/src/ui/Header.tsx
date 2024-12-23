@@ -3,7 +3,7 @@ import { logo } from '../assets'
 import { Link } from "react-router-dom";
 import { IoClose, IoSearchOutline } from 'react-icons/io5'
 import { FiShoppingCart, FiStar, FiUser } from "react-icons/fi";
-import Container from "./Container";
+// import Container from "./Container";
 // import { FaChevronDown } from "react-icons/fa6";
 import { FiAlignLeft } from "react-icons/fi";
 import { config } from '../../config';
@@ -18,25 +18,57 @@ import {
 } from "@headlessui/react";
 // import { ProductProps } from "../../type";
 import { CategoryProps, ProductProps } from "../../type";
+// import Dropdown from "./dropdown";
+// import MegaMenu from "./Megamenu";
+import Megamenu from "../megamenu-ui/Megamenu";
 
 
+// const bottomNavigationTwo = [
+//   { title: "Home", link: "/" },
+//   {
+//     title: "Products",
+//     link: "/products",
+//     subMenu: [
+//       { title: "Beverages", link: "/beverages", description: "pro pproduct new and newnoe" },
+//       { title: "Fragrances", link: "/fragrances", description: "pro pproduct new and newnoe" },
+//       { title: "Accessories", link: "/accessories", description: "pro pproduct new and newnoe" },
 
+//     ],
+//   },
+//   {
+//     title: "BEVERAGES", link: "/category",
+//     subMenu: [
+//       { title: "Beverages", link: "/beverages", description: "pro pproduct new and newnoe" },
+//       { title: "Fragrances", link: "/fragrances", description: "pro pproduct new and newnoe" },
+//       { title: "Accessories", link: "/accessories", description: "pro pproduct new and newnoe" },
 
-const bottomNavigation = [
-  { title: "Home", link: "/" },
-  { title: "BEVERAGES", link: "/category" },
-  { title: "FRAGRANCES", link: "/category" },
-  { title: "AFRICAN GARMETS", link: "/category" },
-  { title: "FOOTWARE", link: "/footware" },
-  { title: "HOMEWARE", link: "/homeware" },
-  { title: "ACCESSORIES", link: "/accessories" },
-  { title: "APPAREL", link: "/apparel" },
-  { title: "AFRICAN CRAFTS", link: "/african-crafts" },
-  { title: "CONFECTIONERY", link: "/confectionary" },
-  // { title: "HEALTH & BEAUTY", link: "/blog" },
-  // { title: "ELECTRONICS", link: "/blog" },
-  // { title: "OFFICE & STATIONERY", link: "/blog" },
-];
+//     ],
+//   },
+//   { title: "FRAGRANCES", link: "/category" },
+//   { title: "AFRICAN GARMETS", link: "/category" },
+//   { title: "FOOTWARE", link: "/footware" },
+//   { title: "HOMEWARE", link: "/homeware" },
+//   { title: "ACCESSORIES", link: "/accessories" },
+//   { title: "APPAREL", link: "/apparel" },
+//   { title: "AFRICAN CRAFTS", link: "/african-crafts" },
+//   { title: "CONFECTIONERY", link: "/confectionary" },
+// ];
+
+// const bottomNavigation = [
+//   { title: "Home", link: "/" },
+//   { title: "BEVERAGES", link: "/category" },
+//   { title: "FRAGRANCES", link: "/category" },
+//   { title: "AFRICAN GARMETS", link: "/category" },
+//   { title: "FOOTWARE", link: "/footware" },
+//   { title: "HOMEWARE", link: "/homeware" },
+//   { title: "ACCESSORIES", link: "/accessories" },
+//   { title: "APPAREL", link: "/apparel" },
+//   { title: "AFRICAN CRAFTS", link: "/african-crafts" },
+//   { title: "CONFECTIONERY", link: "/confectionary" },
+//   // { title: "HEALTH & BEAUTY", link: "/blog" },
+//   // { title: "ELECTRONICS", link: "/blog" },
+//   // { title: "OFFICE & STATIONERY", link: "/blog" },
+// ];
 
 const Header = () => {
   const [searchText, setSearchText] = useState("");
@@ -90,40 +122,40 @@ const Header = () => {
           <img src={logo} alt="Logo" className='22' />
         </Link>
         <Menu>
-        <MenuButton className="inline-flex items-center gap-2 rounded-md border border-white hover:border-white py-1.5 px-3 font-semibold text-black hover:bg-gray-900 hover:text-white">
-          <FiAlignLeft className="text-base mt-1" />Categories
-        </MenuButton>
+          <MenuButton className="inline-flex items-center gap-2 rounded-md border border-white hover:border-white py-1.5 px-3 font-semibold text-black hover:bg-gray-900 hover:text-white">
+            <FiAlignLeft className="text-base mt-1" />Categories
+          </MenuButton>
 
-            <Transition
-              enter="transition ease-out duration-75"
-              enterFrom="opacity-0 scale-95"
-              enterTo="opacity-100 scale-100"
-              leave="transition ease-in duration-100"
-              leaveFrom="opacity-100 scale-100"
-              leaveTo="opacity-0 scale-95"
+          <Transition
+            enter="transition ease-out duration-75"
+            enterFrom="opacity-0 scale-95"
+            enterTo="opacity-100 scale-100"
+            leave="transition ease-in duration-100"
+            leaveFrom="opacity-100 scale-100"
+            leaveTo="opacity-0 scale-95"
+          >
+            <MenuItems
+              anchor="bottom end"
+              className="w-52 origin-top-right rounded-xl border border-white/5 bg-black p-1 text-sm/6 text-gray-300 [--anchor-gap:var(--spacing-1)] focus:outline-none hover:text-white z-50"
             >
-              <MenuItems
-                anchor="bottom end"
-                className="w-52 origin-top-right rounded-xl border border-white/5 bg-black p-1 text-sm/6 text-gray-300 [--anchor-gap:var(--spacing-1)] focus:outline-none hover:text-white z-50"
-              >
-                {categories.map((item: CategoryProps) => (
-                  <MenuItem key={item?._id}>
-                    <Link
-                      to={`/category/${item?._base}`}
-                      className="flex w-full items-center gap-2 rounded-lg py-2 px-3 data-[focus]:bg-white/20 tracking-wide"
-                    >
-                      <img
-                        src={item?.image}
-                        alt="categoryImage"
-                        className="w-6 h-6 rounded-md"
-                      />
-                      {item?.name}
-                    </Link>
-                  </MenuItem>
-                ))}
-              </MenuItems>
-            </Transition>
-          </Menu>
+              {categories.map((item: CategoryProps) => (
+                <MenuItem key={item?._id}>
+                  <Link
+                    to={`/category/${item?._base}`}
+                    className="flex w-full items-center gap-2 rounded-lg py-2 px-3 data-[focus]:bg-white/20 tracking-wide"
+                  >
+                    <img
+                      src={item?.image}
+                      alt="categoryImage"
+                      className="w-6 h-6 rounded-md"
+                    />
+                    {item?.name}
+                  </Link>
+                </MenuItem>
+              ))}
+            </MenuItems>
+          </Transition>
+        </Menu>
         {/**Search Bar */}
         <div className="hidden md:inline-flex max-w-3xl w-full relative">
           <input
@@ -157,7 +189,8 @@ const Header = () => {
 
         {/**Right Bar */}
         <div className="flex items-center gap-x-6 text-2xl">
-          <Link to={'/Profile'}>
+
+          <Link to={'/Profile'} title="Login here">
             <FiUser className="hover:text-skyText duration-200 cursor-pointer" />
           </Link>
 
@@ -177,19 +210,34 @@ const Header = () => {
         {/**Menubar */}
       </div>
       <div className="w-full bg-darkText text-whiteText">
+        {/* 
+        #################Original text
         <Container className="py-2 flex items-center gap-5 justify-between">
 
-          
+
 
           {
             bottomNavigation.map(({ title, link }) => (
-              <Link to={link} key={title} className="uppercase hidden md:inline-flex text-sm font-semibold text-whiteText/90 hover:text-whiteText duration-200 relative overflow-hidden group">
+              <Link to={link} key={title}
+                className="uppercase hidden md:inline-flex text-sm font-semibold text-whiteText/90 hover:text-whiteText duration-200 relative overflow-hidden group">
                 {title}
-                <span className="inline-flex w-full h-[1px] bg-whiteText absolute bottom-0 left-0 transform -translate-x-[105%] group-hover:translate-x-0 duration-300" />
+                <span 
+                className="inline-flex w-full h-[1px] bg-whiteText absolute bottom-0 left-0 transform -translate-x-[105%] group-hover:translate-x-0 duration-300" 
+                />
               </Link>
             ))
           }
-        </Container>
+        </Container> */}
+
+        <div>
+
+          {/* NEw VVVAA@@@@@@@############### */}
+          <Megamenu />
+          {/* <Dropdown /> */}
+          {/* <MegaMenu /> */}
+          {/* New NAV END$$$$$$$$$$$$$$$$###### */}
+
+        </div>
       </div>
     </div>
   )
