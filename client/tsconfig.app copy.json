@@ -13,12 +13,7 @@
     "isolatedModules": true,
     "moduleDetection": "force",
     "noEmit": true,
-    "jsx": "react-jsx",  // JSX mode, you can adjust if you're using a different version of React
-
-    /* Allow JavaScript files */
-    "allowJs": true,      // Allows TypeScript to process JavaScript files
-    "checkJs": false,     // Prevents TypeScript from checking JavaScript files
-    "esModuleInterop": true, // Ensures compatibility with ES module imports
+    "jsx": "react-jsx",
 
     /* Linting */
     "strict": true,
@@ -27,6 +22,5 @@
     "noFallthroughCasesInSwitch": true,
     "noUncheckedSideEffectImports": true
   },
-  "include": ["src", "config.ts"],
-  "exclude": ["node_modules"]
+  "include": ["src", "config.ts"]
 }
