@@ -96,7 +96,6 @@ export default function MainMenuItems({
                                         // className={`flex items-center justify-between w-full py-2 px-3  text-gray-900 border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:px-0  md:py-6 md:dark:hover:text-black dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700 font-medium transition-all duration-300 hover:font-semibold ${menuItemStyle}` }
                                         className={`flex items-center justify-between w-full py-2 px-3 text-white border-b border-gray-100 md:w-auto hover:bg-gray-50 md:hover:bg-transparent md:border-0 md:hover:text-blue-600 md:px-0 md:py-6 md:dark:hover:text-black dark:hover:bg-gray-700 dark:hover:text-black md:dark:hover:bg-transparent dark:border-gray-700 font-medium transition-all duration-300 hover:font-semibold hover:border-b hover:border-gray-500 ${menuItemStyle}`}
                                         style={{ fontSize: '95%' }}
-                                        onClick={onclick}
                                         onMouseOver={onMouseOver}
                                         data-info={JSON.stringify(item.id)}
                                     >

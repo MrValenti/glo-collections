@@ -31,6 +31,42 @@ const products = [
     description: "Grade 4 - 2025 Stationery Hamper",
     price: "2300.00",
   },
+  {
+    id: 5,
+    image: "https://via.placeholder.com/150",
+    title: "Stationery",
+    description: "Grade 4 - 2025 Stationery Hamper",
+    price: "2300.00",
+  },
+  {
+    id: 6,
+    image: "https://via.placeholder.com/150",
+    title: "Stationery",
+    description: "Grade 4 - 2025 Stationery Hamper",
+    price: "2300.00",
+  },
+  {
+    id: 7,
+    image: "https://via.placeholder.com/150",
+    title: "Stationery",
+    description: "Grade 4 - 2025 Stationery Hamper",
+    price: "2300.00",
+  },
+  {
+    id: 8, image: "https://via.placeholder.com/150", title: "Stationery", description: "Grade 4 - 2025 Stationery Hamper", price: "2300.00",
+  },
+  {
+    id: 9, image: "https://via.placeholder.com/150", title: "Stationery", description: "Grade 4 - 2025 Stationery Hamper", price: "2300.00",
+  },
+  {
+    id: 10, image: "https://via.placeholder.com/150", title: "Stationery", description: "Grade 4 - 2025 Stationery Hamper", price: "2300.00",
+  },
+  {
+    id: 11, image: "https://via.placeholder.com/150", title: "Stationery", description: "Grade 4 - 2025 Stationery Hamper", price: "2300.00",
+  },
+  {
+    id: 12, image: "https://via.placeholder.com/150", title: "Stationery", description: "Grade 4 - 2025 Stationery Hamper", price: "2300.00",
+  },
   // Add more products here
 ];
 
@@ -40,7 +76,7 @@ const ProductListHome = () => {
       <div className="mb-10">
         <div className="flex justify-between">
           <div className="text-center w-full">
-            <Title text="Featured Categories" />
+            <Title text="Featured Products" />
           </div>
         </div>
         <div className="w-full h-[1px] bg-gray-200 mt-3" />

@@ -6,6 +6,8 @@ import { config } from "../../config";
 import { HighlightsType } from "../../type";
 import { Link } from "react-router-dom";
 import Title from "./Title";
+import img1 from "../assets/img/women-3.jpeg"
+
 
 const Highlights = () => {
     const [highlightsData, setHighlightsData] = useState([]);
@@ -37,7 +39,8 @@ const Highlights = () => {
           <div
             className="absolute inset-0 bg-cover bg-center transition-transform duration-300 group-hover:scale-110"
             style={{
-              backgroundImage: `url(${item?.image})`,
+              // backgroundImage: `url(${item?.image})`,
+              backgroundImage: img1,
               color: item?.color,
             }}
           ></div>

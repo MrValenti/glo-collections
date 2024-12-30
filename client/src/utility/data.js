@@ -5,15 +5,18 @@ import WomenTrendyBags from '../assets/img/women-4.jpeg';
 export const mainMenuItems = [
     {
         id: 1,
-        title: 'HOME',
+        title: '',
+        href: '/',
     },
     {
         id: 2,
         title: 'BEVERAGES',
+        href: '/beverages/',
     },
     {
         id: 3,
         title: 'FRAGRANCES',
+        href: '#',
     },
     {
         id: 4,
@@ -22,23 +25,23 @@ export const mainMenuItems = [
             {
                 id: 1,
                 category: 'Ethnic wear',
-                href: '#',
+                href: '/category/',
                 subcategories: [
                     {
                         title: 'Ethnic 1 Piece',
-                        href: '#',
+                        href: '/category/',
                     },
                     {
                         title: 'Ethnic Sets',
-                        href: '#',
+                        href: '/category/',
                     },
                     {
                         title: 'Semi-Formals',
-                        href: '#',
+                        href: '/category/',
                     },
                     {
                         title: 'Formals',
-                        href: '#',
+                        href: '/category/',
                     },
                 ],
             },
@@ -49,19 +52,19 @@ export const mainMenuItems = [
                 subcategories: [
                     {
                         title: 'Jeans',
-                        href: '#',
+                        href: '/category/',
                     },
                     {
                         title: 'Twill Pants',
-                        href: '#',
+                        href: '/category/',
                     },
                     {
                         title: 'Palazzo',
-                        href: '#',
+                        href: '/category/',
                     },
                     {
                         title: 'Plain Bottoms',
-                        href: '#',
+                        href: '/category/',
                     },
                     {
                         title: 'Embroidered Bottoms',
@@ -185,6 +188,7 @@ export const mainMenuItems = [
             {
                 id: 2,
                 category: 'Pants',
+                href: '/category/',
                 // subcategories: [
                 //     {
                 //         title: 'Jeans',
@@ -216,30 +220,36 @@ export const mainMenuItems = [
                 id: 4,
                 category: 'Shirts',
                 // subcategories: [],
+                href: '/category/',
             },
             {
                 id: 4,
                 category: 'T-shirts',
+                href: '/category/',
                 // subcategories: [],
             },
             {
                 id: 4,
                 category: 'Tie',
+                href: '/category/',
                 // subcategories: [],
             },
             {
                 id: 4,
                 category: 'formal',
+                href: '/category/',
                 // subcategories: [],
             },
             {
                 id: 4,
                 category: 'Informal',
+                href: '/category/',
                 // subcategories: [],
             },
             {
                 id: 4,
                 category: 'personal care',
+                href: '/category/',
                 // subcategories: [],
             },
         ],
@@ -267,23 +277,23 @@ export const mainMenuItems = [
                 subcategories: [
                     {
                         title: 'upto 60% off',
-                        href: '#',
+                        href: '/category/',
                     },
                     {
                         title: 'Tops & blouses',
-                        href: '#',
+                        href: '/category/',
                     },
                     {
                         title: 'Dresses',
-                        href: '#',
+                        href: '/category/',
                     },
                     {
                         title: 'Jump Suit',
-                        href: '#',
+                        href: '/category/',
                     },
                     {
                         title: 'Shoes',
-                        href: '#',
+                        href: '/category/',
                     },
                 ],
             },
@@ -293,24 +303,24 @@ export const mainMenuItems = [
                 subcategories: [
                     {
                         title: 'upto 60% off',
-                        href: '#',
+                        href: '/category/',
                     },
                     {
                         title: 'T-Shirts',
-                        href: '#',
+                        href: '/category/',
                     },
                     {
                         title: 'Shirts',
-                        href: '#',
+                        href: '/category/',
                     },
 
                     {
                         title: 'Shoes',
-                        href: '#',
+                        href: '/category/',
                     },
                     {
                         title: 'Trousers',
-                        href: '#',
+                        href: '/category/',
                     },
                 ],
             },

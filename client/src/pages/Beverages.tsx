@@ -69,7 +69,7 @@ const Orders = () => {
       <div className="mb-10">
         <div className="flex justify-between">
           <div className="text-center w-full">
-            <Title text="Featured Categories" />
+            <Title text="Featured Beverages" />
           </div>
         </div>
         <div className="w-full h-[1px] bg-gray-200 mt-3" />

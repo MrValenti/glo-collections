@@ -1,6 +1,6 @@
-import Container from "../ui/Container";
-import Title from "../ui/Title";
-import ProductFilter from "./ProductFilter"
+import Container from "./Container";
+import ProductHome from "./ProductHome";
+// import Title from "./Title";
 
 const products = [
   {
@@ -29,56 +29,31 @@ const products = [
     image: "https://via.placeholder.com/150",
     title: "Stationery",
     description: "Grade 4 - 2025 Stationery Hamper",
-    price: "70",
-  },
-  {
-    id: 5,
-    image: "https://via.placeholder.com/150",
-    title: "Stationery",
-    description: "Grade 4 - 2025 Stationery Hamper",
-    price: "30.00",
-  },
-  {
-    id: 6,
-    image: "https://via.placeholder.com/150",
-    title: "Stationery",
-    description: "Grade 4 - 2025 Stationery Hamper",
-    price: "100.00",
-  },
-  {
-    id: 7,
-    image: "https://via.placeholder.com/150",
-    title: "Stationery",
-    description: "Grade 4 - 2025 Stationery Hamper",
     price: "2300.00",
   },
-  {
-    id: 8,
-    image: "https://via.placeholder.com/150",
-    title: "Stationery",
-    description: "Grade 4 - 2025 Stationery Hamper",
-    price: "2300.00",
-  },
+  
   // Add more products here
 ];
 
-
-const Orders = () => {
+const ProductsHome = () => {
   return (
     <Container>
-      <div className="mb-10">
+      {/* <div className="mb-10">
         <div className="flex justify-between">
           <div className="text-center w-full">
-            <Title text="Featured Categories" />
+            <Title text="Featured Products" />
           </div>
         </div>
         <div className="w-full h-[1px] bg-gray-200 mt-3" />
-      </div>
+      </div> */}
       <div className="flex flex-wrap -mx-4">
-        <ProductFilter products={products} />
+        {products.map((product) => (
+          <ProductHome key={product.id} product={product} />
+        ))}
       </div>
     </Container>
-  )
-}
 
-export default Orders
+  );
+};
+
+export default ProductsHome;

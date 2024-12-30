@@ -1,7 +1,7 @@
 import Container from "./Container";
 import Title from "./Title";
-import Img01 from "../assets/newarrivals/img01.png"
-import Img02 from "../assets/newarrivals/img02.png"
+// import Img01 from "../assets/newarrivals/img01.png"
+// import Img02 from "../assets/newarrivals/img02.png"
 
 const NewArrivals = () => {
   const products = [
@@ -12,7 +12,7 @@ const NewArrivals = () => {
       description: "Exclusively in South Africa",
       edition: "Student Pack Edition, 2025",
       additionalInfo: "excl. duties, taxes, and shipping costs",
-      image: Img01, // Replace with your actual product image URL
+      image: "https://via.placeholder.com/150", 
     },
     {
       id: 2,
@@ -21,7 +21,7 @@ const NewArrivals = () => {
       description: "Limited Edition for Professionals",
       edition: "Elite Pack Edition, 2025",
       additionalInfo: "Incl. shipping within South Africa",
-      image: Img02, // Replace with your actual product image URL
+      image: "https://via.placeholder.com/150", 
     },
     {
       id: 3,
@@ -30,7 +30,7 @@ const NewArrivals = () => {
       description: "Perfect for Studio Sessions",
       edition: "Pro Pack Edition, 2025",
       additionalInfo: "Shipping charges apply",
-      image: "https://via.placeholder.com/300x200", // Replace with your actual product image URL
+      image: "https://via.placeholder.com/300x200", 
     },
     {
       id: 4,
@@ -39,7 +39,7 @@ const NewArrivals = () => {
       description: "A true collector's item",
       edition: "Vintage Pack Edition, 2025",
       additionalInfo: "Taxes excluded",
-      image: "https://via.placeholder.com/300x200", // Replace with your actual product image URL
+      image: "https://via.placeholder.com/300x200",
     },
   ];
 

@@ -14,6 +14,7 @@ import Orders from "./pages/Orders.tsx";
 import Product from "./pages/Product.tsx";
 import Profile from "./pages/Profile.tsx";
 import Success from "./pages/Success.tsx";
+import Beverages from "./pages/Beverages.tsx";
 
 
 const RouterLayout = () => {
@@ -64,6 +65,10 @@ const router = createBrowserRouter([
       {
         path: "/orders",
         element: <Orders />,
+      },
+      {
+        path: "/beverages",
+        element: <Beverages />,
       },
       {
         path: "/success",
