@@ -205,7 +205,7 @@ export const blogsData = [
 export const products = [
   {
     _id: 2001,
-    name: "Classic Leather Bag Smart Clock Alarm Pixel Art DIY By App LED Light Sign In Decoration Unique Gift",
+    name: "Divoom Tivoo Portable Bluetooth Speaker Smart Clock Alarm Pixel Art DIY By App LED Light Sign In Decoration Unique Gift",
     images: [
       "https://i.ibb.co/kSCr7bx/women-3.jpg",
       "https://i.ibb.co/kSCr7bx/women-3.jpg",
