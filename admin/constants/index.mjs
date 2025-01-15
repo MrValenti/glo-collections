@@ -114,7 +114,7 @@ export const categories = [
 export const highlightsProducts = [
   {
     _id: 3001,
-    name: "New Deals at Best Prices",
+    name: "New Deals at Best Pricadsaes",
     title: "From $40.00",
     buttonTitle: "Browse Deals",
     image: "https://i.ibb.co/G951N5B/highlights-One.webp",
@@ -140,6 +140,38 @@ export const highlightsProducts = [
     color: "#ffffff",
   },
 ];
+
+export const newarrivalsProducts = [
+  {
+    _id: 3001,
+    name: "New Deals at asaBest Prices22",
+    title: "From $40.00",
+    buttonTitle: "Browse Deals",
+    image: "https://i.ibb.co/G951N5B/highlights-One.webp",
+    _base: "/product",
+    color: "#000000",
+  },
+  {
+    _id: 3002,
+    name: "Colorful Redmi  Note 6 Pro",
+    title: "From $40.00",
+    buttonTitle: "Shop Cellphone",
+    image: "https://i.ibb.co/bLRNKGq/highlights-Two.webp",
+    _base: "/category/cellPhones",
+    color: "#ffffff",
+  },
+  {
+    _id: 3003,
+    name: "1000 mAh Power Bank",
+    title: "From $40.00",
+    buttonTitle: "Shop Now",
+    image: "https://i.ibb.co/svWYstT/highlights-Three.webp",
+    _base: "/product",
+    color: "#ffffff",
+  },
+];
+
+
 
 export const blogsData = [
   {
@@ -173,11 +205,11 @@ export const products = [
     _id: 2001,
     name: "Divoom Tivoo Portable Bluetooth Speaker Smart Clock Alarm Pixel Art DIY By App LED Light Sign In Decoration Unique Gift",
     images: [
-      "https://i.ibb.co/m6ZN7LX/soundBox.webp",
-      "https://i.ibb.co/m6ZN7LX/soundBox.webp",
-      "https://i.ibb.co/wdV3b9q/vaccum.webp",
-      "https://i.ibb.co/tcdSfrr/blueGun.jpg",
-      "https://i.ibb.co/pw0fGmx/gaming-Controller.webp",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
     ],
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellendus dolore, facilis iste obcaecati ab nesciunt ducimus quidem molestias aut? Aut vitae error delectus itaque facilis obcaecati nemo dolore cumque. Blanditiis minus corrupti dignissimos, voluptas iusto, eligendi maiores doloremque aliquid mollitia in hic dolores pariatur doloribus dolorum totam. Facilis, dignissimos.",
@@ -198,11 +230,11 @@ export const products = [
     _id: 2002,
     name: "Xiaomi Mi Watch Lite GPS Bluetooth 5.1 Smart Watch Sports Fitness Heart Rate Monitor 1.4 Inch TFTLCD Screen 5 ATM Waterproof Mi Band",
     images: [
-      "https://i.ibb.co/2tCN9cy/watch-Three.jpg",
-      "https://i.ibb.co/m6ZN7LX/soundBox.webp",
-      "https://i.ibb.co/wdV3b9q/vaccum.webp",
-      "https://i.ibb.co/tcdSfrr/blueGun.jpg",
-      "https://i.ibb.co/pw0fGmx/gaming-Controller.webp",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
     ],
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellendus dolore, facilis iste obcaecati ab nesciunt ducimus quidem molestias aut? Aut vitae error delectus itaque facilis obcaecati nemo dolore cumque. Blanditiis minus corrupti dignissimos, voluptas iusto, eligendi maiores doloremque aliquid mollitia in hic dolores pariatur doloribus dolorum totam. Facilis, dignissimos.",
@@ -223,11 +255,11 @@ export const products = [
     _id: 2003,
     name: "Fitness M3 Color Screen Smart Sport Bracelet Activity Running Tracker Heart Rate For Children Men Women Watch For IOS Android",
     images: [
-      "https://i.ibb.co/NrG9wxw/sport-Watch.jpg",
-      "https://i.ibb.co/m6ZN7LX/soundBox.webp",
-      "https://i.ibb.co/wdV3b9q/vaccum.webp",
-      "https://i.ibb.co/tcdSfrr/blueGun.jpg",
-      "https://i.ibb.co/pw0fGmx/gaming-Controller.webp",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
     ],
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellendus dolore, facilis iste obcaecati ab nesciunt ducimus quidem molestias aut? Aut vitae error delectus itaque facilis obcaecati nemo dolore cumque. Blanditiis minus corrupti dignissimos, voluptas iusto, eligendi maiores doloremque aliquid mollitia in hic dolores pariatur doloribus dolorum totam. Facilis, dignissimos.",
@@ -248,11 +280,11 @@ export const products = [
     _id: 2004,
     name: "SJ8 Air 1290P 4K 60fps Action Camera WIFI Remote Control Waterproof Sports DV FPV Camera",
     images: [
-      "https://i.ibb.co/bQ59C0n/wifi-Camera.webp",
-      "https://i.ibb.co/m6ZN7LX/soundBox.webp",
-      "https://i.ibb.co/wdV3b9q/vaccum.webp",
-      "https://i.ibb.co/tcdSfrr/blueGun.jpg",
-      "https://i.ibb.co/pw0fGmx/gaming-Controller.webp",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
     ],
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellendus dolore, facilis iste obcaecati ab nesciunt ducimus quidem molestias aut? Aut vitae error delectus itaque facilis obcaecati nemo dolore cumque. Blanditiis minus corrupti dignissimos, voluptas iusto, eligendi maiores doloremque aliquid mollitia in hic dolores pariatur doloribus dolorum totam. Facilis, dignissimos.",
@@ -273,11 +305,11 @@ export const products = [
     _id: 2005,
     name: "Redmi Xiaoai Speaker Play 2.4GHz 1.75 Inch Voice Remote Control Music Player Bluetooth 4.2 Mi Speaker For Android Iphone",
     images: [
-      "https://i.ibb.co/tqYyH3G/speaker.webp",
-      "https://i.ibb.co/m6ZN7LX/soundBox.webp",
-      "https://i.ibb.co/wdV3b9q/vaccum.webp",
-      "https://i.ibb.co/tcdSfrr/blueGun.jpg",
-      "https://i.ibb.co/pw0fGmx/gaming-Controller.webp",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
     ],
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellendus dolore, facilis iste obcaecati ab nesciunt ducimus quidem molestias aut? Aut vitae error delectus itaque facilis obcaecati nemo dolore cumque. Blanditiis minus corrupti dignissimos, voluptas iusto, eligendi maiores doloremque aliquid mollitia in hic dolores pariatur doloribus dolorum totam. Facilis, dignissimos.",
@@ -298,11 +330,11 @@ export const products = [
     _id: 2006,
     name: "Xiaomi Mi Watch Lite GPS Bluetooth 5.1 Smart Watch Sports Fitness Heart Rate Monitor 1.4 Inch TFTLCD Screen 5 ATM Waterproof Mi Band",
     images: [
-      "https://i.ibb.co/1TJp88p/smart-Watch.webp",
-      "https://i.ibb.co/m6ZN7LX/soundBox.webp",
-      "https://i.ibb.co/wdV3b9q/vaccum.webp",
-      "https://i.ibb.co/tcdSfrr/blueGun.jpg",
-      "https://i.ibb.co/pw0fGmx/gaming-Controller.webp",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
     ],
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellendus dolore, facilis iste obcaecati ab nesciunt ducimus quidem molestias aut? Aut vitae error delectus itaque facilis obcaecati nemo dolore cumque. Blanditiis minus corrupti dignissimos, voluptas iusto, eligendi maiores doloremque aliquid mollitia in hic dolores pariatur doloribus dolorum totam. Facilis, dignissimos.",
@@ -323,11 +355,11 @@ export const products = [
     _id: 2007,
     name: "Kinganda BT513 Foldable Bluetooth Headphones With Mic",
     images: [
-      "https://i.ibb.co/qs8yhPB/headphone.jpg",
-      "https://i.ibb.co/m6ZN7LX/soundBox.webp",
-      "https://i.ibb.co/wdV3b9q/vaccum.webp",
-      "https://i.ibb.co/tcdSfrr/blueGun.jpg",
-      "https://i.ibb.co/pw0fGmx/gaming-Controller.webp",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
     ],
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellendus dolore, facilis iste obcaecati ab nesciunt ducimus quidem molestias aut? Aut vitae error delectus itaque facilis obcaecati nemo dolore cumque. Blanditiis minus corrupti dignissimos, voluptas iusto, eligendi maiores doloremque aliquid mollitia in hic dolores pariatur doloribus dolorum totam. Facilis, dignissimos.",
@@ -348,11 +380,11 @@ export const products = [
     _id: 2008,
     name: "New Product Form Lapbook Light Handlift Business Office Game Ben EDP 13.5 In – Black China",
     images: [
-      "https://i.ibb.co/RCHWqkS/laptop.webp",
-      "https://i.ibb.co/m6ZN7LX/soundBox.webp",
-      "https://i.ibb.co/wdV3b9q/vaccum.webp",
-      "https://i.ibb.co/tcdSfrr/blueGun.jpg",
-      "https://i.ibb.co/pw0fGmx/gaming-Controller.webp",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
     ],
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellendus dolore, facilis iste obcaecati ab nesciunt ducimus quidem molestias aut? Aut vitae error delectus itaque facilis obcaecati nemo dolore cumque. Blanditiis minus corrupti dignissimos, voluptas iusto, eligendi maiores doloremque aliquid mollitia in hic dolores pariatur doloribus dolorum totam. Facilis, dignissimos.",
@@ -373,11 +405,11 @@ export const products = [
     _id: 2009,
     name: "VIOMI V2 Pro LDS Sensor 2 In 1 Sweeping Mopping Robot Wet And Dry Vacuum Cleaner 2100Pa Strong Suction Self-Charging",
     images: [
-      "https://i.ibb.co/wdV3b9q/vaccum.webp",
-      "https://i.ibb.co/m6ZN7LX/soundBox.webp",
-      "https://i.ibb.co/wdV3b9q/vaccum.webp",
-      "https://i.ibb.co/tcdSfrr/blueGun.jpg",
-      "https://i.ibb.co/pw0fGmx/gaming-Controller.webp",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
     ],
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellendus dolore, facilis iste obcaecati ab nesciunt ducimus quidem molestias aut? Aut vitae error delectus itaque facilis obcaecati nemo dolore cumque. Blanditiis minus corrupti dignissimos, voluptas iusto, eligendi maiores doloremque aliquid mollitia in hic dolores pariatur doloribus dolorum totam. Facilis, dignissimos.",
@@ -398,11 +430,11 @@ export const products = [
     _id: 2010,
     name: "Global Version Redmi Note 9 Pro 6GB RAM 64GB ROM Smartphone Mobile Phone",
     images: [
-      "https://i.ibb.co/sK9yYnY/phone.webp",
-      "https://i.ibb.co/m6ZN7LX/soundBox.webp",
-      "https://i.ibb.co/wdV3b9q/vaccum.webp",
-      "https://i.ibb.co/tcdSfrr/blueGun.jpg",
-      "https://i.ibb.co/pw0fGmx/gaming-Controller.webp",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
     ],
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellendus dolore, facilis iste obcaecati ab nesciunt ducimus quidem molestias aut? Aut vitae error delectus itaque facilis obcaecati nemo dolore cumque. Blanditiis minus corrupti dignissimos, voluptas iusto, eligendi maiores doloremque aliquid mollitia in hic dolores pariatur doloribus dolorum totam. Facilis, dignissimos.",
@@ -423,11 +455,11 @@ export const products = [
     _id: 2011,
     name: "DIDSeth Pan Tilt Security Light Camera Full HD 1080P Wireless Wi-Fi IP Camera Home Dome Surveillance Cameras",
     images: [
-      "https://i.ibb.co/SX8wF1V/camera.webp",
-      "https://i.ibb.co/m6ZN7LX/soundBox.webp",
-      "https://i.ibb.co/wdV3b9q/vaccum.webp",
-      "https://i.ibb.co/tcdSfrr/blueGun.jpg",
-      "https://i.ibb.co/pw0fGmx/gaming-Controller.webp",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
     ],
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellendus dolore, facilis iste obcaecati ab nesciunt ducimus quidem molestias aut? Aut vitae error delectus itaque facilis obcaecati nemo dolore cumque. Blanditiis minus corrupti dignissimos, voluptas iusto, eligendi maiores doloremque aliquid mollitia in hic dolores pariatur doloribus dolorum totam. Facilis, dignissimos.",
@@ -448,11 +480,11 @@ export const products = [
     _id: 2012,
     name: "Electric Hot Melt Glue Gun Cordless Repair DIY Tool Heating Mini Glue Gun With Glue Sticks",
     images: [
-      "https://i.ibb.co/tcdSfrr/blueGun.jpg",
-      "https://i.ibb.co/m6ZN7LX/soundBox.webp",
-      "https://i.ibb.co/wdV3b9q/vaccum.webp",
-      "https://i.ibb.co/tcdSfrr/blueGun.jpg",
-      "https://i.ibb.co/pw0fGmx/gaming-Controller.webp",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
     ],
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellendus dolore, facilis iste obcaecati ab nesciunt ducimus quidem molestias aut? Aut vitae error delectus itaque facilis obcaecati nemo dolore cumque. Blanditiis minus corrupti dignissimos, voluptas iusto, eligendi maiores doloremque aliquid mollitia in hic dolores pariatur doloribus dolorum totam. Facilis, dignissimos.",
@@ -473,11 +505,11 @@ export const products = [
     _id: 2013,
     name: "MECOOL KH3 Android 10.0 Smart 4K 60fps TV Box – Black 2GB RAM + 16GB ROM",
     images: [
-      "https://i.ibb.co/vqmLWww/tvBox.webp",
-      "https://i.ibb.co/m6ZN7LX/soundBox.webp",
-      "https://i.ibb.co/wdV3b9q/vaccum.webp",
-      "https://i.ibb.co/tcdSfrr/blueGun.jpg",
-      "https://i.ibb.co/pw0fGmx/gaming-Controller.webp",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
     ],
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellendus dolore, facilis iste obcaecati ab nesciunt ducimus quidem molestias aut? Aut vitae error delectus itaque facilis obcaecati nemo dolore cumque. Blanditiis minus corrupti dignissimos, voluptas iusto, eligendi maiores doloremque aliquid mollitia in hic dolores pariatur doloribus dolorum totam. Facilis, dignissimos.",
@@ -498,11 +530,11 @@ export const products = [
     _id: 2014,
     name: "Sony PS4 Controller Bluetooth Vibration Gamepad For Playstation 4 Detroit Wireless Joystick For PS4 Games Consol",
     images: [
-      "https://i.ibb.co/pw0fGmx/gaming-Controller.webp",
-      "https://i.ibb.co/m6ZN7LX/soundBox.webp",
-      "https://i.ibb.co/wdV3b9q/vaccum.webp",
-      "https://i.ibb.co/tcdSfrr/blueGun.jpg",
-      "https://i.ibb.co/pw0fGmx/gaming-Controller.webp",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
+      "https://i.ibb.co/kSCr7bx/women-3.jpg",
     ],
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellendus dolore, facilis iste obcaecati ab nesciunt ducimus quidem molestias aut? Aut vitae error delectus itaque facilis obcaecati nemo dolore cumque. Blanditiis minus corrupti dignissimos, voluptas iusto, eligendi maiores doloremque aliquid mollitia in hic dolores pariatur doloribus dolorum totam. Facilis, dignissimos.",
