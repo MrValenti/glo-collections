@@ -1,3 +1,5 @@
+// import img01 from "./assets/Tapiwa-2.png";
+
 const cat = {
   tvAndAudio: "tvAndAudio",
   tvBox: "tvBox",
@@ -203,7 +205,7 @@ export const blogsData = [
 export const products = [
   {
     _id: 2001,
-    name: "Divoom Tivoo Portable Bluetooth Speaker Smart Clock Alarm Pixel Art DIY By App LED Light Sign In Decoration Unique Gift",
+    name: "Classic Leather Messenger Bag",
     images: [
       "https://i.ibb.co/kSCr7bx/women-3.jpg",
       "https://i.ibb.co/kSCr7bx/women-3.jpg",
@@ -212,7 +214,7 @@ export const products = [
       "https://i.ibb.co/kSCr7bx/women-3.jpg",
     ],
     description:
-      "Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis repellendus dolore, facilis iste obcaecati ab nesciunt ducimus quidem molestias aut? Aut vitae error delectus itaque facilis obcaecati nemo dolore cumque. Blanditiis minus corrupti dignissimos, voluptas iusto, eligendi maiores doloremque aliquid mollitia in hic dolores pariatur doloribus dolorum totam. Facilis, dignissimos.",
+      "Upgrade your style with this timeless leather messenger bag, perfect for both work and casual outings. Crafted from high-quality tan leather with contrasting dark brown straps and polished gold-tone hardware, this bag blends functionality with sophistication.",
     regularPrice: 600,
     discountedPrice: 580,
     quantity: 1,
